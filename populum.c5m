@@ -59818,8 +59818,8 @@ addstring "c*High Hoburg Offspring"
 free
 addstring     "(&)Baron"
 
-newritual "Head Hunting"
-descr "Dvala's bring together all manner of lower beings not just Dwarves but they never leave their courts letting their Councilors head hunt talent for them offering gold and gems but sometimes turning up nothing. Councilors can seek out all sorts of types from humans settlements, to hoburgs, goblins, and even kobolds. A councilor will not be able to search for new talent when a Dvala is present"
+newritual "Head Hunting (Mines and Mountains)"
+descr "Dvala's bring together all manner of lower beings not just Dwarves but they never leave their courts letting their Councilors head hunt talent for them offering gold and gems but sometimes turning up nothing. Councilors can seek out all sorts of types from mines and mountains. A councilor will not be able to search for new talent when a Dvala is present"
 ritpow                30 # Dwarf Councilor
 level 1
 cost 0 50 
@@ -59831,7 +59831,26 @@ airare 5
 sum0chance 15
 summoning
 addstring "!Error"
+addstring "!Error"
 addstring "(-12)c*Black Kobold Settler" #Greater Mines
+addstring "(-1029)Dwarf Commander"
+addstring "(-)Young Dvala"          # This string will only be used by nomonreq or nomonworldreq.
+addstring "(-)Dvala"                # This string will only be used by nomonreq or nomonworldreq.
+addstring "(-)Daughter of Dvalin"   # This string will only be used by nomonreq or nomonworldreq.
+
+newritual "Head Hunting"
+descr "Dvala's bring together all manner of lower beings not just Dwarves but they never leave their courts letting their Councilors head hunt talent for them offering gold and gems but sometimes turning up nothing. Councilors can seek out all sorts of types from humans settlements, to hoburgs, and goblins."
+ritpow                30 # Dwarf Councilor
+level 1
+cost 0 50 
+cost 15 2
+rebateterr50 126
+free
+airare 5
+sum0chance 15
+summoning
+addstring "!Error"
+addstring "!Error"
 addstring "(-1029)Dwarf Commander"
 addstring "(-28)c*Heroine"    # Towns+
 addstring "(-28)c*Peddlar"
@@ -59845,9 +59864,6 @@ addstring "(-6)c*Goblin Hero"        # 12       Forest
 addstring "(-3)c*Hedge Wizard"       # 13       Libs
 addstring "(-64)c*Reveler"           # 14       Farms-hamlets
 addstring "(-2)c*Priest"    		 # 15       Temple
-addstring "(-)Young Dvala"          # This string will only be used by nomonreq or nomonworldreq.
-addstring "(-)Dvala"                # This string will only be used by nomonreq or nomonworldreq.
-addstring "(-)Daughter of Dvalin"   # This string will only be used by nomonreq or nomonworldreq.
 
 newritual "Develop Coal Mine"
 descr "Construct a coal mine in any mountain using Dwarf Workers. Doing will attract animals, creatures, and locals depending on terrain and climate. Coal is cheapest and easiest mineral resource to develop though it can be dangerous as the creatures living in the area will likely attack. Councilor's have estimated that a coal mine is developed usually within a year's time."
